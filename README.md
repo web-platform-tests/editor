@@ -31,7 +31,7 @@ Run `npm i -g typescript` (in terminal) to install typescript on your machine.
 to the version of MongoDB installed. (**3.6** to your version)
 1. Create a path `uploads/db` from the root of the project. Local MongoDB data will be saved here.
 1. Run `mongo.cmd` command first. (double-click cmd file from the file explorer or run `./mongo.cmd` from terminal)
-1. Run `complie.cmd` on any changes made.
+1. Run `compile.cmd` on any changes made.
 1. Run `start.cmd` to start running locally at <http://localhost:3000>
 
 ### Getting Started
