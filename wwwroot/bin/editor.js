@@ -2534,7 +2534,7 @@ var SettingsDialog = new Tag().with({
                         vm.githubUserName$(),
                         ") from editor")),
                 React.createElement("label", { style: "display: block; margin-bottom: 10px" },
-                    React.createElement("a", { style: "display: block", href: "https://github.com/MicrosoftEdge/editor", target: "_blank" },
+                    React.createElement("a", { style: "display: block", href: "https://github.com/web-platform-tests/editor", target: "_blank" },
                         React.createElement("span", { class: "icon" }, "\uD83C\uDF74"),
                         "Contribute and/or fork this site on Github")),
                 "\t\t\t\t",

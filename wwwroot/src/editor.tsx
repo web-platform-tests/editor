@@ -1033,7 +1033,7 @@ var SettingsDialog = new Tag().with({
 					</button>
 				</label>
 				<label style="display: block; margin-bottom: 10px">
-					<a style="display: block" href="https://github.com/MicrosoftEdge/editor" target="_blank">
+					<a style="display: block" href="https://github.com/web-platform-tests/editor" target="_blank">
 						<span class="icon">🍴</span>
 						Contribute and/or fork this site on Github
 					</a>
