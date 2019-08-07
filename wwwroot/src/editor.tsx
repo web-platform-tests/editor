@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-/// <reference path="wptest-vm.tsx" />
+/// <reference path="editor-vm.tsx" />
 
 var Input = new Tag <{ value$:Prop<string> } & JSX.IntrinsicInputElement> ().from(a=>
 	<input {...attributesOf(a)} value={a.value$()} oninput={bindTo(a.value$)} onchange={bindTo(a.value$)} />
@@ -960,9 +960,9 @@ var DeletedUserDialog = new Tag().with({
 		<section tabindex="-1">
 			<h1>Successfully removed your account!</h1>
 			<form action="POST" onsubmit={e => { e.preventDefault(); self.close(); }}>
-				<p>Successfully deleted your account: <b>{vm.deletedUserDialog.deletedUser$()}</b> from wptest.center. 
+				<p>Successfully deleted your account: <b>{vm.deletedUserDialog.deletedUser$()}</b> from editor.center. 
 				All tests created by you no longer have your name associated with them, but instead are now associated with randomly assigned anonymous name: <b>{vm.deletedUserDialog.newAnonymousUser$()}</b>.</p>
-				<p>To view and delete your tests please go to <a href={`/#/u/${vm.deletedUserDialog.newAnonymousUser$()}`}>wptest.center/#/u/{vm.deletedUserDialog.newAnonymousUser$()}</a> to see a list of tests that you can delete. <b>Please save this link for future reference to delete your tests.</b></p>
+				<p>To view and delete your tests please go to <a href={`/#/u/${vm.deletedUserDialog.newAnonymousUser$()}`}>editor.center/#/u/{vm.deletedUserDialog.newAnonymousUser$()}</a> to see a list of tests that you can delete. <b>Please save this link for future reference to delete your tests.</b></p>
 				<footer style="margin-top: 20px">
 					<input type="submit" value=" Got it! " />
 				</footer>
@@ -1029,11 +1029,11 @@ var SettingsDialog = new Tag().with({
 				<label style="display: block; margin-bottom: 10px">
 					<button hidden={!vm.githubIsConnected$()} onclick={e => self.deleteUser()}>
 						<span class="icon">⛔️</span>
-						Remove your account ({vm.githubUserName$()}) from wptest
+						Remove your account ({vm.githubUserName$()}) from editor
 					</button>
 				</label>
 				<label style="display: block; margin-bottom: 10px">
-					<a style="display: block" href="https://github.com/MicrosoftEdge/wptest" target="_blank">
+					<a style="display: block" href="https://github.com/MicrosoftEdge/editor" target="_blank">
 						<span class="icon">🍴</span>
 						Contribute and/or fork this site on Github
 					</a>
@@ -1285,9 +1285,9 @@ function updatePageTitle() {
 	var urlPart = '';
 	var id = vm.currentTestId$();
 	if(id && id != 'new' && id.substr(0,5) != 'json:') {
-		urlPart = 'wptest.center/#/' + id;
+		urlPart = 'editor.center/#/' + id;
 	} else {
-		urlPart = 'wptest.center';
+		urlPart = 'editor.center';
 	}
 	if(tm.title && tm.title != 'UntitledTest') {
 		titlePart = tm.title + ' - ';

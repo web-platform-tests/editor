@@ -4,7 +4,7 @@
 ///
 /// This file contains the view model of the application
 ///
-/// <reference path="lib/wptest-framework.tsx" />
+/// <reference path="lib/editor-framework.tsx" />
 /// <reference path="lib/model.d.ts" />
 
 /** The iframe in which vm.run() writes */

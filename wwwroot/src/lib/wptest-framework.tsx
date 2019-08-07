@@ -5,7 +5,7 @@
 /// This file contains mithril extensions to build my own framework
 ///
 /// <reference path="monaco.d.ts" />
-/// <reference path="wptest-helpers.tsx" />
+/// <reference path="editor-helpers.tsx" />
 
 declare var m: M.Static;
 declare var cssbeautify: (cssText: string, opts?:any) => string;

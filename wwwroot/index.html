@@ -6,16 +6,16 @@ Licensed under the MIT License.
 <!doctype html>
 <html>
 <head>
-	<title>wptest.center/new</title>
+	<title>editor.center/new</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<script src="bin/mithril.js"></script>
 	<link rel="stylesheet" href="style/base.css" />
-	<link rel="stylesheet" href="style/wptest.css" />
+	<link rel="stylesheet" href="style/editor.css" />
 	<script src="bin/cssbeautify.js" defer></script>
 	<script src="bin/monaco-editor/min/vs/loader.js"></script>
 	<script>require.config({ paths: { 'vs': 'bin/monaco-editor/min/vs' }}); localStorage.getItem('noMonaco') || require(['vs/editor/editor.main'],function(x){return x})</script>
 </head>
 <body>
-	<script src="bin/wptest.js" async></script>
+	<script src="bin/editor.js" async></script>
 </body>
 </html>

@@ -349,7 +349,7 @@ if (!String.raw) {
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 /// <reference path="monaco.d.ts" />
-/// <reference path="wptest-helpers.tsx" />
+/// <reference path="editor-helpers.tsx" />
 m.route.prefix('#');
 var amountOfRedrawSuspenders = 0;
 function suspendRedrawsOn(codeToRun) {
@@ -527,7 +527,7 @@ function attributesOf(a) {
 ///
 /// This file contains the view model of the application
 ///
-/// <reference path="lib/wptest-framework.tsx" />
+/// <reference path="lib/editor-framework.tsx" />
 /// <reference path="lib/model.d.ts" />
 /** The iframe in which vm.run() writes */
 var getOutputPane = function () {
@@ -1643,7 +1643,7 @@ var ExportDialogViewModel = /** @class */ (function (_super) {
 var vm = new ViewModel();
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
-/// <reference path="wptest-vm.tsx" />
+/// <reference path="editor-vm.tsx" />
 var Input = new Tag().from(function (a) {
     return React.createElement("input", __assign({}, attributesOf(a), { value: a.value$(), oninput: bindTo(a.value$), onchange: bindTo(a.value$) }));
 });
@@ -2469,13 +2469,13 @@ var DeletedUserDialog = new Tag().with({
                 React.createElement("p", null,
                     "Successfully deleted your account: ",
                     React.createElement("b", null, vm.deletedUserDialog.deletedUser$()),
-                    " from wptest.center. All tests created by you no longer have your name associated with them, but instead are now associated with randomly assigned anonymous name: ",
+                    " from editor.center. All tests created by you no longer have your name associated with them, but instead are now associated with randomly assigned anonymous name: ",
                     React.createElement("b", null, vm.deletedUserDialog.newAnonymousUser$()),
                     "."),
                 React.createElement("p", null,
                     "To view and delete your tests please go to ",
                     React.createElement("a", { href: "/#/u/" + vm.deletedUserDialog.newAnonymousUser$() },
-                        "wptest.center/#/u/",
+                        "editor.center/#/u/",
                         vm.deletedUserDialog.newAnonymousUser$()),
                     " to see a list of tests that you can delete. ",
                     React.createElement("b", null, "Please save this link for future reference to delete your tests.")),
@@ -2532,9 +2532,9 @@ var SettingsDialog = new Tag().with({
                         React.createElement("span", { class: "icon" }, "\u26D4\uFE0F"),
                         "Remove your account (",
                         vm.githubUserName$(),
-                        ") from wptest")),
+                        ") from editor")),
                 React.createElement("label", { style: "display: block; margin-bottom: 10px" },
-                    React.createElement("a", { style: "display: block", href: "https://github.com/MicrosoftEdge/wptest", target: "_blank" },
+                    React.createElement("a", { style: "display: block", href: "https://github.com/MicrosoftEdge/editor", target: "_blank" },
                         React.createElement("span", { class: "icon" }, "\uD83C\uDF74"),
                         "Contribute and/or fork this site on Github")),
                 "\t\t\t\t",
@@ -2725,10 +2725,10 @@ function updatePageTitle() {
     var urlPart = '';
     var id = vm.currentTestId$();
     if (id && id != 'new' && id.substr(0, 5) != 'json:') {
-        urlPart = 'wptest.center/#/' + id;
+        urlPart = 'editor.center/#/' + id;
     }
     else {
-        urlPart = 'wptest.center';
+        urlPart = 'editor.center';
     }
     if (tm.title && tm.title != 'UntitledTest') {
         titlePart = tm.title + ' - ';

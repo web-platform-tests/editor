@@ -1,5 +1,5 @@
 {
-  "name": "wptest",
+  "name": "editor",
   "version": "1.1.0",
   "description": "Tool to reduce webplatform issues to tests",
   "main": "app.js",
@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FremyCompany/wptest.git"
+    "url": "git+https://github.com/web-platform-tests/editor.git"
   },
   "keywords": [
-    "wptest",
-    "wptestcenter"
+    "editor",
+    "editorcenter"
   ],
   "author": "FremyCompany",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FremyCompany/wptest/issues"
+    "url": "https://github.com/web-platform-tests/editor/issues"
   },
-  "homepage": "https://github.com/FremyCompany/wptest#readme",
+  "homepage": "https://github.com/web-platform-tests/editor#readme",
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "express": "^4.14.1",

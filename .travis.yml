@@ -10,6 +10,6 @@ deploy:
   provider: azure_web_apps
   username: _________________________
   password: _________________________
-  site: wptest-center
+  site: editor-center
   slot: production
 # https://docs.microsoft.com/en-us/azure/app-service-web/app-service-deploy-local-git

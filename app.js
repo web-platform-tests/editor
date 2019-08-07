@@ -19,7 +19,7 @@ var CFG = {
 	// used when a global url is required
 	CURRENT_HOST: 'http://localhost:3000',
 	// used to connect to the mongo database, you need to start a local one by default
-	MONGO_URL: 'mongodb://localhost:27017/wptest',
+	MONGO_URL: 'mongodb://localhost:27017/editor',
 	// how long a user stays logged in by default
 	LOGIN_MAX_AGE: 1000*36e00*24*31*6,
 	// used to sign login cookies, don't choose too short
