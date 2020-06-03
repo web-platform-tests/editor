@@ -1,8 +1,8 @@
-# [Editor](https://editor.center/#/new)
+# [Editor](https://wptest.center/#/new)
 An online web application to reduce web issues directly to webplatform tests.
 
 ### See it live
-Visit [editor.center](https://wptest.center/#/new) to get started!
+Visit [wptest.center](https://wptest.center/#/new) to get started!
 
 ### Features
 1. Protoyping HTML, CSS, and Javascript code. See sample code rendered on page.

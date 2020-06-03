@@ -960,9 +960,9 @@ var DeletedUserDialog = new Tag().with({
 		<section tabindex="-1">
 			<h1>Successfully removed your account!</h1>
 			<form action="POST" onsubmit={e => { e.preventDefault(); self.close(); }}>
-				<p>Successfully deleted your account: <b>{vm.deletedUserDialog.deletedUser$()}</b> from editor.center. 
+				<p>Successfully deleted your account: <b>{vm.deletedUserDialog.deletedUser$()}</b> from wptest.center. 
 				All tests created by you no longer have your name associated with them, but instead are now associated with randomly assigned anonymous name: <b>{vm.deletedUserDialog.newAnonymousUser$()}</b>.</p>
-				<p>To view and delete your tests please go to <a href={`/#/u/${vm.deletedUserDialog.newAnonymousUser$()}`}>editor.center/#/u/{vm.deletedUserDialog.newAnonymousUser$()}</a> to see a list of tests that you can delete. <b>Please save this link for future reference to delete your tests.</b></p>
+				<p>To view and delete your tests please go to <a href={`/#/u/${vm.deletedUserDialog.newAnonymousUser$()}`}>wptest.center/#/u/{vm.deletedUserDialog.newAnonymousUser$()}</a> to see a list of tests that you can delete. <b>Please save this link for future reference to delete your tests.</b></p>
 				<footer style="margin-top: 20px">
 					<input type="submit" value=" Got it! " />
 				</footer>
@@ -1285,9 +1285,9 @@ function updatePageTitle() {
 	var urlPart = '';
 	var id = vm.currentTestId$();
 	if(id && id != 'new' && id.substr(0,5) != 'json:') {
-		urlPart = 'editor.center/#/' + id;
+		urlPart = 'wptest.center/#/' + id;
 	} else {
-		urlPart = 'editor.center';
+		urlPart = 'wptest.center';
 	}
 	if(tm.title && tm.title != 'UntitledTest') {
 		titlePart = tm.title + ' - ';
