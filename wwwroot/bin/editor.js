@@ -2469,13 +2469,13 @@ var DeletedUserDialog = new Tag().with({
                 React.createElement("p", null,
                     "Successfully deleted your account: ",
                     React.createElement("b", null, vm.deletedUserDialog.deletedUser$()),
-                    " from editor.center. All tests created by you no longer have your name associated with them, but instead are now associated with randomly assigned anonymous name: ",
+                    " from wptest.center. All tests created by you no longer have your name associated with them, but instead are now associated with randomly assigned anonymous name: ",
                     React.createElement("b", null, vm.deletedUserDialog.newAnonymousUser$()),
                     "."),
                 React.createElement("p", null,
                     "To view and delete your tests please go to ",
                     React.createElement("a", { href: "/#/u/" + vm.deletedUserDialog.newAnonymousUser$() },
-                        "editor.center/#/u/",
+                        "wptest.center/#/u/",
                         vm.deletedUserDialog.newAnonymousUser$()),
                     " to see a list of tests that you can delete. ",
                     React.createElement("b", null, "Please save this link for future reference to delete your tests.")),
@@ -2725,10 +2725,10 @@ function updatePageTitle() {
     var urlPart = '';
     var id = vm.currentTestId$();
     if (id && id != 'new' && id.substr(0, 5) != 'json:') {
-        urlPart = 'editor.center/#/' + id;
+        urlPart = 'wptest.center/#/' + id;
     }
     else {
-        urlPart = 'editor.center';
+        urlPart = 'wptest.center';
     }
     if (tm.title && tm.title != 'UntitledTest') {
         titlePart = tm.title + ' - ';
