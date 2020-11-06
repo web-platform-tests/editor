@@ -1,4 +1,4 @@
-# [Editor](https://wptest.center/#/new)
+# [Editor](https://editor.web-platform-tests.org/editor/#/new)
 An online web application to reduce web issues directly to webplatform tests.
 
 ### See it live
@@ -12,10 +12,7 @@ Visit the [Web Platform Test Editor](https://editor.web-platform-tests.org/#/new
 
 ## Contributing
 
-This project welcomes contributions and suggestions. Most contributions require you to
-agree to a Contributor License Agreement (CLA) declaring that you have the right to,
-and actually do, grant us the rights to use your contribution. For details, visit
-https://cla.microsoft.com.
+This project welcomes contributions and suggestions.
 
 
 ### Requirements
@@ -53,21 +50,18 @@ instructions provided by the bot. You will only need to do this once across all 
 
 ### Code of Conduct
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project has adopted the [Web-Platform-Tests Code of Conduct](https://github.com/web-platform-tests/wpt/blob/master/CODE_OF_CONDUCT.md).
 
 ## Contact
 
 ### Issues
-Any issues related to the project can be found [here](https://github.com/MicrosoftEdge/editor/issues). Feel free to submit more for any feature requests or bugs.
+Any issues related to the project can be found [here](https://github.com/web-platform-tests/editor/issues). Feel free to submit more for any feature requests or bugs.
 
 ### Reporting Security Issues
 
-Security issues and bugs should be reported privately, via email, to the Microsoft Security
-Response Center (MSRC) at [secure@microsoft.com](mailto:secure@microsoft.com). You should
+Security issues and bugs should be reported privately, via email, to the Browser Testing and Tools Working Group at the W3C. Please send email to the [group](https://lists.w3.org/Archives/Public/public-test-infra/) privately. You should
 receive a response within 24 hours. If for some reason you do not, please follow up via
-email to ensure we received your original message. Further information, including the
-[MSRC PGP](https://technet.microsoft.com/en-us/security/dn606155) key, can be found in
-the [Security TechCenter](https://technet.microsoft.com/en-us/security/default).
+email to ensure we received your original message.
 
 ### License
 This project is under MIT license described in detail [here](LICENSE.txt).
