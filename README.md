@@ -1,4 +1,4 @@
-# [Editor](https://editor.web-platform-tests.org/editor/#/new)
+# [Editor](https://editor.web-platform-tests.org/#/new)
 An online web application to reduce web issues directly to webplatform tests.
 
 ### See it live
