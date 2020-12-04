@@ -18,6 +18,10 @@ This project welcomes contributions and suggestions.
 ### Requirements
 You will need [node.js with npm](https://nodejs.org/en/download/) and [MongoDB](https://www.mongodb.com/download-center#community) installed.
 
+*Some [alternatives](https://www.educba.com/mongodb-alternatives/) to MongoDB*
+- [RethinkDB](https://rethinkdb.com/)
+- [OrientDB](https://www.orientdb.org/)
+
 Run `npm i -g typescript` (in terminal) to install typescript on your machine.
 
 ### Project Setup
